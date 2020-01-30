@@ -33,8 +33,12 @@
           {
             "resourceName": "cognitoNew",
             "config": {
-              "triggerType": "DefineAuthChallenge"
+              "triggerType": "UserMigration"
             }
+          },
+          {
+            "resourceName": "apigusEast1Nnany",
+            "config": {}
           }
         ]
       }
@@ -202,6 +206,44 @@
             }
           }
         }
+      },
+      "apigusEast1Nnany": {
+        "name": "apigusEast1Nnany",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "us-east-1",
+          "apiMode": 0,
+          "apiName": "N",
+          "endpointType": "EDGE",
+          "resourceMode": 0,
+          "resourceName": "n",
+          "resourcePath": "/n",
+          "restMethod": "ANY",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 0,
+          "stageName": "test",
+          "mode": 0
+        }
+      },
+      "apigusEast1Nnget": {
+        "name": "apigusEast1Nnget",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "us-east-1",
+          "apiMode": 0,
+          "apiName": "N",
+          "endpointType": "EDGE",
+          "resourceMode": 0,
+          "resourceName": "n",
+          "resourcePath": "/n",
+          "restMethod": "GET",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 0,
+          "stageName": "test",
+          "mode": 0
+        }
       }
     },
     "customTemplate": {
@@ -229,7 +271,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1580360989778
+    "lastSave": 1580361411371
   },
   "VCS_STATE": {
     "provider": "GitHub",
